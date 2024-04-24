@@ -14,4 +14,5 @@ false || false == false
 "Moisés" != "Henrique" || 9 < 5  == true
 
 !true == false
-!false == true
+!false == true 
+
