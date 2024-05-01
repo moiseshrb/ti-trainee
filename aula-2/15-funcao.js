@@ -49,3 +49,16 @@ const dadosDoUsuario = {
   endereco: ""
 }
 parametrosDoJeitoCerto(dadosDoUsuario)
+
+
+// Escopo de uma função
+
+const pokemom = "mew"
+
+function evoluir() {
+  pokemom = "mewtwo"
+}
+
+console.log(pokemom)
+evoluir()
+console.log(pokemom)
