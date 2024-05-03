@@ -1,64 +1,75 @@
-// Entrada* > Procedimento > Saída* 
+// Entrada* > Procedimento > Saída*
 function hello() {
-  console.log('Hello world!')
+  console.log("Hello world!");
 }
 
-hello
-hello()
+hello;
+hello();
 
 function dobro(x) {
-  return x * 2
+  return x * 2;
 }
 
-
-console.log(dobro(4))
+console.log(dobro(4));
 
 // A ordem dos parâmetros é importante
 // Ao usar vários parâmetros, é recomendado deixar aqueles com valor padrão por último
 function criarUsuario(nome, email, senha, tipo = "leitor") {
-  const usuario = { nome, email, senha, tipo }
-  console.log(usuario)
+  const usuario = { nome, email, senha, tipo };
+  console.log(usuario);
 }
 
 function novoUsuario(nome, tipo = "leitor", email, senha) {
-  const usuario = { nome, email, senha, tipo }
-  console.log(usuario)
+  const usuario = { nome, email, senha, tipo };
+  console.log(usuario);
 }
 
-criarUsuario("Isaac", "isaac@email.com", "1234")
-novoUsuario("Isaac", "isaac@email.com", "1234")
-
+criarUsuario("Isaac", "isaac@email.com", "1234");
+novoUsuario("Isaac", "isaac@email.com", "1234");
 
 // Funções com muitos parâmetros
 // Ao criarmos uma função com muitos parâmetros,
 // uma boa prática é substituí-los por um objeto
-function parametrosDoJeitoErrado(nome, telefone, endereco, aniversario, email, senha) {
+function parametrosDoJeitoErrado(
+  nome,
+  telefone,
+  endereco,
+  aniversario,
+  email,
+  senha
+) {
   // ...
 }
 function parametrosDoJeitoCerto(usuario) {
   // ...
 }
 // Além de facilitar na chamada da função, a ordem dos parâmetros se torna irrelevante
-parametrosDoJeitoErrado("nome", "telefone", "endereco", "aniversario", "email", "senha")
+parametrosDoJeitoErrado(
+  "nome",
+  "telefone",
+  "endereco",
+  "aniversario",
+  "email",
+  "senha"
+);
 const dadosDoUsuario = {
   nome: "",
   telefone: "",
   email: "",
   senha: "",
   aniversario: "",
-  endereco: ""
-}
-parametrosDoJeitoCerto(dadosDoUsuario)
-
+  endereco: "",
+};
+parametrosDoJeitoCerto(dadosDoUsuario);
 
 // Escopo de uma função
 
-const pokemom = "mew"
+const pokemom = "mew";
 
 function evoluir() {
-  pokemom = "mewtwo"
+  pokemom = "mewtwo";
 }
 
-console.log(pokemom)
-evoluir()
-console.log(pokemom)
+console.log(pokemom);
+evoluir();
+console.log(pokemom);
