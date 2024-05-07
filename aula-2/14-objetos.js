@@ -1,7 +1,7 @@
-let nome = "prop"
+let nome = "lala"
 let obj = {}
 
-obj.prop = "Olá, mundo!"
+obj.lala = "Olá, mundo!"
 console.log(obj) 
 
 let funcao = "log"
@@ -16,3 +16,4 @@ const superCarro = {}
 superCarro.marca = "BMW"
 superCarro.modelo = "M3"
 
+ 
